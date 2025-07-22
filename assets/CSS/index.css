@@ -51,6 +51,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
     h1{
         font-size: 50px;
     }
@@ -224,6 +225,25 @@ footer{
             width: 80%;
             flex-direction: column;
         }
+        
+    }
+}
+
+@media (max-width: 375px){
+    nav a{
+        padding: 0;
+        border: 0px;
+        background-color: transparent
+    };
+
+    nav a:hover{
+        border-bottom: 2px solid black;
+    }
+
+    #inicio{
+        display: flex;
+        justify-content: center;
+        text-align: center;
         
     }
 }
