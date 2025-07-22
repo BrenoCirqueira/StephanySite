@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+   background: linear-gradient(60deg, pink ,rgb(199, 25, 54)); 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
+    height: 10vh;
+    width: 100%;;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    border: 2px solid rgb(61, 20, 100) ;
+    border-radius: 12px;
+}
+
+a:hover{
+    box-shadow: 0px 0px 12px black;
+}
+
+section{
+    margin-bottom: 10px ;
+}
+
+#inicio{
+    background-image: url(../images/pink_hearts_background_1101.jpg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 50px;
+    }
+}
+
+#apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+#conteinerApresentacao{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    img{
+        border-radius: 24px;
+        border: 3px solid rgb(61, 20, 100) ;
+        box-shadow: 0px 0px 12px ;
+    }
+    p{
+        text-align: justify;
+    }
+}
+
+#historia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    p{
+        margin: 0 10%;
+    }
+}
+
+#fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conteiner{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 16px;
+    translate: 0.3s;
+}
+.conteiner li{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.conteiner li img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteiner li, .conteiner li img{
+    transition: 0.3s;
+}
+.conteiner li .content{
+    transition: 1.5s ease;
+}
+.conteiner span{
+    text-align: center;
+    width: 75%;
+}
+.conteiner h2{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 4px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color: #fff;
+}
+.conteiner p{
+    color: #ddd;
+    font-size: 10px;
+    width: 100%;
+}
+.conteiner li .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%) ;
+}
+.conteiner:hover{
+    gap: 0;
+}
+.conteiner li .content span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0px;
+    translate: -50%;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+.conteiner li:hover{
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+
+.conteiner li:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.conteiner li:hover span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+#brenoRelatos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2{
+        text-align: center;
+    }
+}
+
+#brenoRelatos div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 430px){
+    #inicio{
+        height: 50vh;
+    }
+    #apresentacao{
+        margin-bottom: 5rem;
+        #conteinerApresentacao{
+            width: 80%;
+            flex-direction: column;
+        }
+        
+    }
+}
