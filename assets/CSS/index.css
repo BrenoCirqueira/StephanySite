@@ -46,7 +46,7 @@ section{
 #inicio{
     background-image: url(../images/pink_hearts_background_1101.jpg);
     background-size: cover;
-    height: 40vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +206,39 @@ section{
     justify-content: space-around;
 }
 
+#linhaDoTempo{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.lembranca{
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
+    box-shadow: 0px 0px 12px black;
+
+    img{
+        width: 300px;
+        background-size: cover;
+    };
+    p{
+        font-size: 1.4rem;
+        text-align: justify
+    };
+    
+}
+span{
+    font-weight: bold;
+}
+
 footer{
     background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
     height: 5vh;
@@ -226,6 +259,14 @@ footer{
             flex-direction: column;
         }
         
+    }
+
+    #linhaDoTempo{
+    gap: 40px;
+    }
+    
+    .lembranca{
+    flex-direction: column;
     }
 }
 
