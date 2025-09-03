@@ -240,6 +240,56 @@ span{
     font-weight: bold;
 }
 
+#emrrolados{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    #ConteinarTemas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        .opçãoDeFilme{
+            background-color: aqua;
+            width: 90%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid peru;
+            border-radius: 24px;
+            overflow: hidden;
+            img{
+                width: 80%;
+                pointer-events: none;
+
+            };
+        }
+
+    }
+}
+
+#enrolados{
+    background-image: url(../images/enroladosBackGround.jpg);
+    background-size: cover;
+}
+#veloz{
+    background: linear-gradient(60deg, gray , rgb(30, 29, 29));
+}
+
+#helloKitty{
+    background: linear-gradient(60deg, rgb(255, 255, 255) , rgb(203, 29, 75));
+}
+
+#herryPotter{
+    background: linear-gradient(60deg, peru , rgb(203, 29, 75));
+}
+
 footer{
     background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
     height: 5vh;
