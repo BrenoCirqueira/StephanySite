@@ -47,6 +47,10 @@ section{
     background-image: url(../images/pink_hearts_background_1101.jpg);
     background-size: cover;
     height: 100vh;
+    
+}
+#conteiner1{
+    height: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +60,15 @@ section{
         font-size: 50px;
         text-align: center;
     }
+}
+
+
+#listaAno{
+    
+    background-color: transparent;
+    nav{
+        background-color: transparent
+    };
 }
 
 #apresentacao{
@@ -290,7 +303,7 @@ span{
     background: linear-gradient(60deg, peru , rgb(203, 29, 75));
 }
 
-footer{
+#rodape{
     background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
     height: 5vh;
     text-align: center;

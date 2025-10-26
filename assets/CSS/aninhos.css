@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
+    height: 10vh;
+    width: 100%;;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 3px solid peru;
+    box-shadow: 0px 0px 12px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    border: 2px solid rgb(61, 20, 100) ;
+    border-radius: 12px;
+}
+
+a:hover{
+    box-shadow: 0px 0px 12px black;
+}
+
+main{
+    background: linear-gradient(90deg, rgb(194, 93, 10) , rgb(150, 142, 123));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px; /* espaço entre as polaroides */
+
+}
+
+.polaroid {
+      background-color: white;
+      width: 250px;
+      padding: 10px 10px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+      text-align: center;
+      transform: rotate(-2deg);
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .polaroid h2 {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    footer{
+    background: linear-gradient(60deg, pink ,rgb(199, 25, 54));
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 15vh 0px 0px 0px;
+    }
+}
