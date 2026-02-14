@@ -1,53 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belos Aninhos</title>
+    <title>💕 Nossos Aninhos Juntos 💕 | Stephany</title>
     <link rel="stylesheet" href="../assets/CSS/aninhos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Efeito de corações flutuantes -->
+    <div id="hearts-container"></div>
+    
     <header>
-        <h1></h1>
-        <nav>
-            <a href="../index.html">Voltar</a>
-            <a href="">Proximo</a>
-        </nav>
+        <div class="header-content">
+            <h1 class="header-title">💕 Nossos Aninhos Juntos 💕</h1>
+            <nav>
+                <a href="../index.html" class="nav-link">
+                    <span>🏠 Voltar</span>
+                </a>
+            </nav>
+        </div>
     </header>
+    
     <main>
-        <section class="polaroid">
-            <img src="../assets/images/AnoNovoFOTO.jpeg" alt="Foto Polaroid">
-            <h2>01 de janeiro de 2025</h2>
-        </section>
+        <div class="intro-section">
+            <h2 class="intro-title">Memórias Preciosas</h2>
+            <p class="intro-text">Cada foto guarda um momento especial do nosso amor 💖</p>
+        </div>
+        
+        <div class="polaroid-container">
+            <section class="polaroid" data-date="2025-01-01">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/AnoNovoFOTO.jpeg" alt="Ano Novo 2025">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">🎉</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>01 de Janeiro de 2025</h2>
+                        <p>Começando o ano juntos</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="polaroid">
-            <img src="../assets/images/fotonapraia.jpeg" alt="Foto Polaroid">
-            <h2>06 de julho de 2025</h2>
-        </section>
+            <section class="polaroid" data-date="2025-07-06">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/fotonapraia.jpeg" alt="Praia">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">🏖️</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>06 de Julho de 2025</h2>
+                        <p>Dias de sol e amor</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="polaroid">
-            <img src="../assets/images/MilkmooFOTO.jpeg" alt="Foto Polaroid">
-            <h2>23 de Outubro de 2025</h2>
-        </section>
-        <section class="polaroid">
-            <img src="../assets/images/SorveteFOTO.jpeg" alt="Foto Polaroid">
-            <h2>11 de novembro de 2023</h2>
-        </section>
-        <section class="polaroid">
-            <img src="../assets/images/ParaBrazilFOTO.jpeg" alt="Foto Polaroid">
-            <h2>13 de agosto de 2024</h2>
-        </section>
+            <section class="polaroid" data-date="2025-10-23">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/MilkmooFOTO.jpeg" alt="Milkmoo">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">🍦</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>23 de Outubro de 2025</h2>
+                        <p>Doces momentos</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="polaroid">
-            <img src="../assets/images/fotoEspelho.jpeg" alt="Foto Polaroid">
-            <h2>23 de agosto de 2025</h2>
-        </section>
+            <section class="polaroid" data-date="2023-11-11">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/SorveteFOTO.jpeg" alt="Sorvete">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">🍨</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>11 de Novembro de 2023</h2>
+                        <p>Nossa primeira doçura</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="polaroid" data-date="2024-08-13">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/ParaBrazilFOTO.jpeg" alt="Para Brazil">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">🇧🇷</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>13 de Agosto de 2024</h2>
+                        <p>Amor brasileiro</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="polaroid" data-date="2025-08-23">
+                <div class="polaroid-inner">
+                    <div class="polaroid-image-wrapper">
+                        <img src="../assets/images/fotoEspelho.jpeg" alt="Espelho">
+                        <div class="polaroid-overlay">
+                            <span class="overlay-icon">💕</span>
+                        </div>
+                    </div>
+                    <div class="polaroid-label">
+                        <h2>23 de Agosto de 2025</h2>
+                        <p>Reflexos do nosso amor</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+    
     <footer>
-        &copy;IloveYOU
+        <div class="footer-content">
+            <p class="footer-heart">💕</p>
+            <p>&copy; Eu te amo, Stephany</p>
+            <p class="footer-message">Cada foto é uma lembrança do nosso amor</p>
+            <p class="footer-heart">💕</p>
+        </div>
     </footer>
+    
+    <script src="../src/aninhos.js"></script>
 </body>
 
 </html>

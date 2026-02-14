@@ -1,96 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephany Esteves</title>
+    <title>Para Minha Amada 💕 | Stephany</title>
     <link rel="stylesheet" href="./assets/CSS/index.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Efeito de corações flutuantes -->
+    <div id="hearts-container"></div>
+    
     <header>
         <nav>
-            <a href="#inicio"><i class="ph ph-house"></i></a>
-            <a href="#apresentacao"><i class="ph ph-user"></i></a>
-            <a href="#historia"><i class="ph ph-book-open-text"></i></a>
-            <a href="#fotos"><i class="ph ph-image"></i></a>
-            <a href="#linhaDoTempo"><i class="ph ph-line-segments"></i></a>
-            <a href="#emrrolados"><i class="ph ph-music-notes"></i></a>
+            <a href="#inicio" title="Início"><i class="ph ph-house"></i> <span>Início</span></a>
+            <a href="#apresentacao" title="Sobre Ela"><i class="ph ph-user"></i> <span>Sobre Ela</span></a>
+            <a href="#historia" title="Nossa História"><i class="ph ph-book-open-text"></i> <span>História</span></a>
+            <a href="#fotos" title="Memórias"><i class="ph ph-image"></i> <span>Memórias</span></a>
+            <a href="#linhaDoTempo" title="Linha do Tempo"><i class="ph ph-line-segments"></i> <span>Linha do Tempo</span></a>
+            <a href="#declaracoes" title="Declarações"><i class="ph ph-heart"></i> <span>Declarações</span></a>
+            <a href="#emrrolados" title="Temas Favoritos"><i class="ph ph-music-notes"></i> <span>Temas</span></a>
         </nav>
     </header>
     <main id="main">
         <section id="inicio">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
             <div id="conteiner1">
-                <h1>Stephany Almeida</h1>
-                <p>Futura Srta. Esteves</p>
-                <audio id="audioplay" autoplay controls
-                    src="assets/audio/Vem Cá - Pelé MilFlows (Prod. Volp & Rafa Valle).mp3"></audio>
+                <div class="heart-animation">💕</div>
+                <h1 class="title-glow">Stephany Almeida</h1>
+                <p class="subtitle-romantic">Futura Srta. Esteves</p>
+                <p class="love-quote">"Você é a razão do meu sorriso todos os dias"</p>
+                <div class="audio-container">
+                    <audio id="audioplay" loop>
+                        <source src="assets/audio/Vem Cá - Pelé MilFlows (Prod. Volp & Rafa Valle).mp3" type="audio/mpeg">
+                    </audio>
+                    <button id="playPauseBtn" class="play-button">
+                        <i class="ph ph-play" id="playIcon"></i>
+                        <i class="ph ph-pause" id="pauseIcon" style="display: none;"></i>
+                    </button>
+                    <div class="audio-info">
+                        <span>🎵 Vem Cá - Pelé MilFlows</span>
+                    </div>
+                </div>
             </div>
             <footer id="listaAno">
-                    <nav>
-                        <a href="./janelas/aninhos.html">2 Aninhos</a>
-                    </nav>
+                <nav>
+                    <a href="./janelas/aninhos.html" class="special-link">
+                        <i class="ph ph-heart"></i> 2 Aninhos Juntos
+                    </a>
+                </nav>
             </footer>
         </section>
         <section id="apresentacao">
-            <h2>Minha namorada</h2>
+            <div class="section-header">
+                <h2 class="section-title">💖 Minha Namorada 💖</h2>
+                <div class="title-underline"></div>
+            </div>
             <div id="conteinerApresentacao">
-                <img src="assets/images/stephanyFoto.png" alt="">
-                <p>Ela é daquelas pessoas que chegam de mansinho e, em poucos minutos, já iluminam tudo à sua volta.
-                    Inteligente, carismática e dona de um sorriso que desarma qualquer dia ruim, Stephany é alguém que
-                    une
-                    leveza com força de forma admirável Formada em Brenologia, apaixonada por gatos e qualquer outra
-                    coisa
-                    que ela julgue "de menininha", e sempre pronta para aprender algo novo, ela transforma cada conversa
-                    em
-                    uma oportunidade de conexão genuína. É empática, curiosa e tem um senso de humor que faz qualquer
-                    papo
-                    ganhar vida. Quem tem o privilégio de conhecê-la sabe que ela não é apenas especial ela é única.</p>
+                <div class="image-wrapper">
+                    <img src="assets/images/stephanyFoto.png" alt="Stephany" class="profile-image">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="text-content">
+                    <p class="romantic-text">Ela é daquelas pessoas que chegam de mansinho e, em poucos minutos, já iluminam tudo à sua volta.
+                        Inteligente, carismática e dona de um sorriso que desarma qualquer dia ruim, Stephany é alguém que
+                        une leveza com força de forma admirável.</p>
+                    <p class="romantic-text">Formada em Brenologia, apaixonada por gatos e qualquer outra coisa que ela julgue "de menininha", 
+                        e sempre pronta para aprender algo novo, ela transforma cada conversa em uma oportunidade de conexão genuína.</p>
+                    <p class="romantic-text highlight">É empática, curiosa e tem um senso de humor que faz qualquer papo ganhar vida. 
+                        Quem tem o privilégio de conhecê-la sabe que ela não é apenas especial... ela é única. ✨</p>
+                </div>
             </div>
         </section>
         <section id="historia">
-            <h2>Nossa historia</h2>
-            <p>O Relacionamento deles se iniciou de um completo nada, ambos eram somente colegas de escola, eles se
-                davam
-                muito bem, e resenhavam entre seus amigos em comum. certo dia aleatorio ambos se depararam com uma
-                amizade
-                indebativel, horas de chamadas sem assunto precissamente gastas.
-                horas de diverçõoes em call, o interese de ambos foi se aflorando, porem nenhum dos dois sabiam para
-                onde
-                essas noites em claro estava fluindo.
-                pouco tempo depois, a resenha passou a virar afeto, (da parte dela que não aguentou o macho alfa que vos
-                fala), ambos decidiram expressar oque guardavam em seus corações. A tensão tornou-se risada, o afeto
-                aflorou, e o pedido aconteçeu <br> Eles começaram simples e tranquilos, namoro de escola, nada
-                exageradamente intimo... Se divertiram, se chatearam, mas decidiram que o relacionamento é assim, basta
-                sentar e conversar. O tempo passou, e aquele namoro despretensioso de escola começou a tomar forma. O
-                carinho que antes era leve e divertido se aprofundou, transformando-se em algo mais sólido e verdadeiro.
-                Os
-                dias se tornaram preenchidos por mensagens inesperadas, gestos sutis de cuidado e uma vontade cada vez
-                maior
-                de estarem juntos.
-                As resenhas continuaram, mas agora misturadas com planos para o futuro, sonhos compartilhados e aquele
-                entendimento silencioso que só quem ama conhece. Cada pequeno desafio que aparecia servia apenas para
-                reforçar o que já era claro: eles escolheriam um ao outro, sempre.
-                As noites em claro não eram mais cheias de incertezas, mas sim repletas de risadas sobre lembranças,
-                planos
-                para viagens, e declarações espontâneas de amor. O namoro de escola se transformou em parceria, o afeto
-                virou cumplicidade, e o relacionamento deixou de ser algo simples para se tornar algo essencial.
-                E assim, entre conversas intermináveis, desafios superados e um carinho que só crescia, eles perceberam
-                que
-                estavam vivendo uma história que, um dia, talvez seja contada como um daqueles contos inesquecíveis.
-                Afinal,
-                amor de verdade não precisa de exageros, apenas de dois corações que escolhem caminhar juntos.
-
-                Hoje eles ainda estão juntos, e pretendem continuar assim ate que a morte os separe, (mas sabemos que
-                depois
-                dela ainda vão estar juntos).</p>
+            <div class="section-header">
+                <h2 class="section-title">📖 Nossa História de Amor 📖</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="story-container">
+                <div class="story-card">
+                    <div class="story-icon">💫</div>
+                    <p class="story-text">O relacionamento deles se iniciou de um completo nada, ambos eram somente colegas de escola, 
+                        eles se davam muito bem, e resenhavam entre seus amigos em comum. Certo dia aleatório ambos se depararam com 
+                        uma amizade inesquecível, horas de chamadas sem assunto precisamente gastas.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🌙</div>
+                    <p class="story-text">Horas de diversões em call, o interesse de ambos foi se aflorando, porém nenhum dos dois 
+                        sabiam para onde essas noites em claro estavam fluindo. Pouco tempo depois, a resenha passou a virar afeto 
+                        (da parte dela que não aguentou o macho alfa que vos fala), ambos decidiram expressar o que guardavam em seus corações.</p>
+                </div>
+                <div class="story-card highlight-card">
+                    <div class="story-icon">💕</div>
+                    <p class="story-text">A tensão tornou-se risada, o afeto aflorou, e o pedido aconteceu. Eles começaram simples e 
+                        tranquilos, namoro de escola, nada exageradamente íntimo... Se divertiram, se chatearam, mas decidiram que 
+                        o relacionamento é assim, basta sentar e conversar.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🌱</div>
+                    <p class="story-text">O tempo passou, e aquele namoro despretensioso de escola começou a tomar forma. O carinho 
+                        que antes era leve e divertido se aprofundou, transformando-se em algo mais sólido e verdadeiro. Os dias se 
+                        tornaram preenchidos por mensagens inesperadas, gestos sutis de cuidado e uma vontade cada vez maior de estarem juntos.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">✨</div>
+                    <p class="story-text">As resenhas continuaram, mas agora misturadas com planos para o futuro, sonhos compartilhados 
+                        e aquele entendimento silencioso que só quem ama conhece. Cada pequeno desafio que aparecia servia apenas para 
+                        reforçar o que já era claro: eles escolheriam um ao outro, sempre.</p>
+                </div>
+                <div class="story-card highlight-card">
+                    <div class="story-icon">💖</div>
+                    <p class="story-text">As noites em claro não eram mais cheias de incertezas, mas sim repletas de risadas sobre 
+                        lembranças, planos para viagens, e declarações espontâneas de amor. O namoro de escola se transformou em parceria, 
+                        o afeto virou cumplicidade, e o relacionamento deixou de ser algo simples para se tornar algo essencial.</p>
+                </div>
+                <div class="story-card final-card">
+                    <div class="story-icon">💍</div>
+                    <p class="story-text">E assim, entre conversas intermináveis, desafios superados e um carinho que só crescia, 
+                        eles perceberam que estavam vivendo uma história que, um dia, talvez seja contada como um daqueles contos inesquecíveis. 
+                        Afinal, amor de verdade não precisa de exageros, apenas de dois corações que escolhem caminhar juntos.</p>
+                    <p class="final-message">💕 Hoje eles ainda estão juntos, e pretendem continuar assim até que a morte os separe 
+                        (mas sabemos que depois dela ainda vão estar juntos). 💕</p>
+                </div>
+            </div>
         </section>
         <section id="fotos">
-            <h2>Foto de lembranças</h2>
+            <div class="section-header">
+                <h2 class="section-title">📸 Nossas Memórias 📸</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="photos-intro">Passe o mouse sobre as fotos para ver nossas lembranças especiais 💕</p>
             <ul class="conteiner">
                 <li>
                     <img src="assets/images/Athos.jpeg" alt="">
@@ -134,68 +181,92 @@
                 </li>
             </ul>
         </section>
-        <section id="brenoRelatos">
-            <h2>Breno Relatos</h2>
-            <div>
-                <table border="4">
-                    <tr>
-                        <th>Felicidade</th>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <th>Preocupação</th>
-                        <td>30%</td>
-                    <tr>
-                    <tr>
-                        <th>Dinheiro</th>
-                        <td>70%</td>
-                    </tr>
-                </table>
-                <p><strong>Depois</strong></p>
-                <table border="4">
-                    <tr>
-                        <th>Felicidade</th>
-                        <td>90%</td>
-                    </tr>
-                    <tr>
-                        <th>Preocupação</th>
-                        <td>90%</td>
-                    <tr>
-                    <tr>
-                        <th>Dinheiro</th>
-                        <td>40%</td>
-                    </tr>
-                </table>
+        <section id="declaracoes">
+            <div class="section-header">
+                <h2 class="section-title">💌 Declarações de Amor 💌</h2>
+                <div class="title-underline"></div>
             </div>
-            <table border="4" cellspacing="0">
-                <tr>
-                    <th>Felicidade</th>
-                    <td>Podemos ver que A felicidade dele aumentou consideravelmente, mas relatos indicam que o mesmo
-                        não
-                        esta
-                        100% felis, pois nã oconseguiu conquistar a casinha e os bens para que possão construir sua vida
-                        juntos.
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Preocupação</th>
-                    <td>A preocupação do mesmo aumentou pois agora ele tambem tem medo de a princesa dele se estabacar
-                        no
-                        chão a
-                        cada curva de bicicleta.</td>
-                <tr>
-                <tr>
-                    <th>Dinheiro</th>
-                    <td>O Dinheiro diminuiu, pois agora o papel perdeu o valor, ele conheceu o <strong>Sorriso
-                            Dela.</strong>
-                    </td>
-                </tr>
-            </table>
+            <div class="declarations-container">
+                <div class="declaration-card">
+                    <div class="declaration-header">
+                        <h3>📊 Antes de Você</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">Felicidade</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 50%"></div>
+                            </div>
+                            <div class="stat-value">50%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Preocupação</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="stat-value">30%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Dinheiro</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 70%"></div>
+                            </div>
+                            <div class="stat-value">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="declaration-card highlight-declaration">
+                    <div class="declaration-header">
+                        <h3>💕 Depois de Você</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">Felicidade</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill highlight-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="stat-value">90%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Preocupação</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="stat-value">90%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Dinheiro</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 40%"></div>
+                            </div>
+                            <div class="stat-value">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reflection-container">
+                <div class="reflection-card">
+                    <h3>💖 Felicidade</h3>
+                    <p>Podemos ver que a felicidade dele aumentou consideravelmente, mas relatos indicam que o mesmo não está 
+                        100% feliz, pois não conseguiu conquistar a casinha e os bens para que possam construir sua vida juntos.</p>
+                </div>
+                <div class="reflection-card">
+                    <h3>😰 Preocupação</h3>
+                    <p>A preocupação do mesmo aumentou pois agora ele também tem medo de a princesa dele se estatelar no chão 
+                        a cada curva de bicicleta.</p>
+                </div>
+                <div class="reflection-card highlight-reflection">
+                    <h3>💰 Dinheiro</h3>
+                    <p>O dinheiro diminuiu, pois agora o papel perdeu o valor... ele conheceu o <strong>Sorriso Dela</strong>. 💕</p>
+                </div>
+            </div>
         </section>
         <section id="linhaDoTempo">
-            <h2>🎉Feliz aniversario meu amor🎉</h2>
-            <p>💖Em prol da sue felicidade eu fiz uma linha do tempo do nosso amor.💖</p>
+            <div class="section-header">
+                <h2 class="section-title">🎉 Feliz Aniversário Meu Amor 🎉</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="timeline-intro">💖 Em prol da sua felicidade eu fiz uma linha do tempo do nosso amor. 💖</p>
             <div class="lembranca">
                 <img src="assets/images/fotodocinema.jpeg" alt="">
                 <p><span>Nosso primerio encontro</span> <br> <br> Tudo começou com passeio com amigos, naquela epoca o
@@ -260,20 +331,50 @@
             </div>
         </section>
         <section id="emrrolados">
-            <h2>Temas favoritos</h2>
+            <div class="section-header">
+                <h2 class="section-title">🎬 Nossos Temas Favoritos 🎬</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="themes-intro">Cada um desses temas representa momentos especiais que compartilhamos juntos 💕</p>
             <div id="ConteinarTemas">
-                <div id="enrolados" class="opçãoDeFilme"><img src="assets/images/enroladosLogo.png" alt="Enrolados">
+                <div id="enrolados" class="opçãoDeFilme">
+                    <div class="theme-overlay">
+                        <h3>Enrolados</h3>
+                        <p>Nosso conto de fadas favorito</p>
+                    </div>
+                    <img src="assets/images/enroladosLogo.png" alt="Enrolados">
                 </div>
-                <div id="veloz" class="opçãoDeFilme"><img src="assets/images/logoVelozesEFuriosos.png" alt="velozes">
+                <div id="veloz" class="opçãoDeFilme">
+                    <div class="theme-overlay">
+                        <h3>Velozes e Furiosos</h3>
+                        <p>Ação e emoção juntos</p>
+                    </div>
+                    <img src="assets/images/logoVelozesEFuriosos.png" alt="velozes">
                 </div>
-                <div id="helloKitty" class="opçãoDeFilme"><img src="assets/images/hello kitty.png" alt=""></div>
-                <div id="herryPotter" class="opçãoDeFilme"><img src="assets/images/herryPotter Logo.webp"
-                        alt="HerryPotter"></div>
+                <div id="helloKitty" class="opçãoDeFilme">
+                    <div class="theme-overlay">
+                        <h3>Hello Kitty</h3>
+                        <p>Fofura e carinho</p>
+                    </div>
+                    <img src="assets/images/hello kitty.png" alt="Hello Kitty">
+                </div>
+                <div id="herryPotter" class="opçãoDeFilme">
+                    <div class="theme-overlay">
+                        <h3>Harry Potter</h3>
+                        <p>Magia e aventura</p>
+                    </div>
+                    <img src="assets/images/herryPotter Logo.webp" alt="HerryPotter">
+                </div>
             </div>
         </section>
     </main>
     <footer id="rodape">
-        <p> &copy; Eu te amo.Stephany</p>
+        <div class="footer-content">
+            <p class="footer-heart">💕</p>
+            <p>&copy; Eu te amo, Stephany</p>
+            <p class="footer-message">Para sempre e sempre, meu amor</p>
+            <p class="footer-heart">💕</p>
+        </div>
     </footer>
     <script src="src/script.js" defer></script>
 </body>
